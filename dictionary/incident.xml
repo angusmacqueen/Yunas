@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true,hasLabels=true,live_feed=true,hasWorkflow=true" audit="true" defaultsort="-1" extends="task" label="Vaka" max_length="40" name="incident" sizeclass="189816" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="YIS Number" max_length="40" name="x_nyklo_yunas_yis_number" type="string"/>
+    </element>
+</database>

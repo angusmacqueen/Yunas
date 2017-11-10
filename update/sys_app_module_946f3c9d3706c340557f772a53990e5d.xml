@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Yunas">4a157d394f9d6600e022ecd18110c7b5</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="incident">incident_stateIN7,11,2,3,1,14,12,4,13,9,5,15,17^active=true^caller_id.countryLIKEFR^assignment_groupLIKEYunas^ORassignment_groupLIKEGHQ - Yunas^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="IN" or="false" value="7,11,2,3,1,14,12,4,13,9,5,15,17"/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="caller_id.country" goto="false" newquery="false" operator="LIKE" or="false" value="FR"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="LIKE" or="false" value="Yunas"/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="LIKE" or="true" value="GHQ - Yunas"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>HTML</link_type>
+        <map_page/>
+        <mobile_title>Incidents Assigned to my Group</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>incident</name>
+        <order>34</order>
+        <override_menu_roles>false</override_menu_roles>
+        <populate_view/>
+        <query>&lt;span id='modCount946f3c9d3706c340557f772a53990e5d'&gt;&lt;/span&gt;
+&lt;script&gt;
+refreshNumber946f3c9d3706c340557f772a53990e5d();
+function refreshNumber946f3c9d3706c340557f772a53990e5d() {
+   //Set the module title and link
+   var mod946f3c9d3706c340557f772a53990e5d = gel('modCount946f3c9d3706c340557f772a53990e5d');
+   //Only construct the link if it does not exist yet
+   if(!gel('946f3c9d3706c340557f772a53990e5dlink')){
+      var menu_link = document.createElement('a');
+      menu_link.id = '946f3c9d3706c340557f772a53990e5dlink';
+      menu_link.innerHTML = "Yunas FR";
+      menu_link.title = "";
+      menu_link.href = 'incident_list.do?sysparm_userpref_module=946f3c9d3706c340557f772a53990e5d&amp;amp;sysparm_query=incident_stateIN7,11,2,3,1,14,12,4,13,9,5,15,17%5Eactive=true%5Ecaller_id.countryLIKEFR%5Eassignment_groupLIKEYunas%5EORassignment_groupLIKEGHQ%20-%20Yunas%5EEQ%5E&amp;amp;sysparm_view=';
+      menu_link.target = 'gsft_main';
+      menu_link.className ='menu';
+      menu_link.onclick = function() {refreshNumber946f3c9d3706c340557f772a53990e5d()};
+      mod946f3c9d3706c340557f772a53990e5d.appendChild(menu_link);
+   }
+
+   //Query for the count of records for the module
+   var count = new GlideAjax('ModuleCount');
+   count.addParam('sysparm_name', 'moduleCount');
+   count.addParam('sys_table', 'incident');
+   count.addParam('sys_query', decodeURI('incident_stateIN7,11,2,3,1,14,12,4,13,9,5,15,17%5Eactive=true%5Ecaller_id.countryLIKEFR%5Eassignment_groupLIKEYunas%5EORassignment_groupLIKEGHQ%20-%20Yunas%5EEQ'));
+   count.getXML(displayModuleCount946f3c9d3706c340557f772a53990e5d);
+   document.getElementById("modCount946f3c9d3706c340557f772a53990e5d").parentElement.style.display = "inline";
+}
+
+function displayModuleCount946f3c9d3706c340557f772a53990e5d(response){
+   var answer = response.responseXML.documentElement.getAttribute('answer');
+   var menu_link = gel('946f3c9d3706c340557f772a53990e5dlink');
+   if(answer &gt; 0){
+   menu_link.innerHTML = getMessage("Yunas FR") + "&amp;#60;font color='Blue'&amp;#62; (" + answer + ")&amp;#60;/font&amp;#62;";
+   }
+   else {
+   menu_link.innerHTML = getMessage("Yunas FR");
+   }
+   window.setTimeout('refreshNumber946f3c9d3706c340557f772a53990e5d()', 300000);
+}
+&lt;/script&gt;</query>
+        <report/>
+        <roles>x_nyklo_yunas.user,YunasDE</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>macqueena</sys_created_by>
+        <sys_created_on>2017-10-25 14:08:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>946f3c9d3706c340557f772a53990e5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Yunas FR</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
+        <sys_update_name>sys_app_module_946f3c9d3706c340557f772a53990e5d</sys_update_name>
+        <sys_updated_by>macqueena</sys_updated_by>
+        <sys_updated_on>2017-10-25 14:08:44</sys_updated_on>
+        <timeline_page/>
+        <title>Yunas FR</title>
+        <u_basic_module display_value="Open Incident from my Country">c76537c53742c340557f772a53990ee2</u_basic_module>
+        <u_count_color>Blue</u_count_color>
+        <u_count_filter/>
+        <u_refresh_interval>300000</u_refresh_interval>
+        <u_show_count>true</u_show_count>
+        <u_sort_order/>
+        <u_tablet_only>false</u_tablet_only>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

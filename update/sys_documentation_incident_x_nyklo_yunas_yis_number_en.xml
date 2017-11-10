@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_nyklo_yunas_yis_number" label="YIS Number" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_nyklo_yunas_yis_number</element>
+            <help/>
+            <hint/>
+            <label>YIS Number</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>YIS Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>macqueena</sys_created_by>
+            <sys_created_on>2016-08-24 12:25:08</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6fc8e9b34f9d2a00e022ecd18110c71e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>YIS Number</sys_name>
+            <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
+            <sys_update_name>sys_documentation_incident_x_nyklo_yunas_yis_number_en</sys_update_name>
+            <sys_updated_by>macqueena</sys_updated_by>
+            <sys_updated_on>2016-08-24 12:25:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

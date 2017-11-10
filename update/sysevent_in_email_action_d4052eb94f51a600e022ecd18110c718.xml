@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Yunas Level 2 Support FW V2</name>
+        <order>2</order>
+        <reply_email/>
+        <required_roles/>
+        <script>current.comments = "received from: " + email.origemail + "\n\n" + email.body_text;&#13;
+current.short_description = email.subject;&#13;
+ &#13;
+var eto = email.to.toLowerCase().toString();&#13;
+var sid='';&#13;
+var rec = new GlideRecord('sys_user');&#13;
+var subj = email.subject;&#13;
+rec.addQuery('email',email.from);&#13;
+rec.query();&#13;
+if(rec.next()){&#13;
+  sid = rec.sys_id.toString();&#13;
+}&#13;
+if((eto.indexOf("yunaseusupport@uk.yusen-logistics.com") &gt; -1)){&#13;
+  if(sid=='')&#13;
+  sid = gs.getUser().getUserByID('guest').getID();&#13;
+  current.caller_id = sid;&#13;
+  current.opened_by = sid;&#13;
+//  current.u_g_watch_list = email.from;&#13;
+ &#13;
+  var arrUtil = new ArrayUtil();&#13;
+  var toArray = email.to.split(','); // TO field users&#13;
+  var ccArray= email.copied.split(','); // CC filed users&#13;
+  var mergeTOandCC = arrUtil.union(toArray,ccArray); // Merge TO and CC&#13;
+  var SMTPaddress = gs.getProperty('glide.email.user');&#13;
+  for(var i = 0; i&lt; mergeTOandCC.length; i++){&#13;
+  if(mergeTOandCC[i] != SMTPaddress){// glide.email.user stores SMTP address of Instance, we wont require it to be added again in guest watchlist&#13;
+ &#13;
+  if(current.u_g_watch_list == null){&#13;
+  current.u_g_watch_list = mergeTOandCC[i];&#13;
+  }else{&#13;
+  current.u_g_watch_list = current.u_g_watch_list + "," + mergeTOandCC[i];&#13;
+  }&#13;
+  }&#13;
+}&#13;
+  current.assignment_group.setDisplayValue('Yunas Level 2 Support');&#13;
+  current.incident_state = 2;&#13;
+  current.contact_type = "Email";&#13;
+  //}&#13;
+ &#13;
+  current.insert();&#13;
+  event.state="stop_processing";&#13;
+  }&#13;
+</script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>macqueena</sys_created_by>
+        <sys_created_on>2016-08-18 11:40:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d4052eb94f51a600e022ecd18110c718</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Yunas Level 2 Support FW V2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
+        <sys_update_name>sysevent_in_email_action_d4052eb94f51a600e022ecd18110c718</sys_update_name>
+        <sys_updated_by>macqueena</sys_updated_by>
+        <sys_updated_on>2017-08-17 10:23:53</sys_updated_on>
+        <table>incident</table>
+        <template/>
+        <type>forward</type>
+    </sysevent_in_email_action>
+</record_update>

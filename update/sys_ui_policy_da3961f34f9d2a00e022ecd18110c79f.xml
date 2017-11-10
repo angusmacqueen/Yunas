@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="incident">assignment_group!=b4fd7a044fa56a00e022ecd18110c7fc^assignment_group!=3c89f25b3717a600557f772a53990e50^assignment_group!=5d411eeb4fbd3600e022ecd18110c741^assignment_group!=07d1522f4fbd3600e022ecd18110c784^EQ<item display_table="sys_user_group" display_value="Yunas Level 2 Support" endquery="false" field="assignment_group" goto="false" newquery="false" operator="!=" or="false" value="b4fd7a044fa56a00e022ecd18110c7fc"/>
+            <item display_table="sys_user_group" display_value="Yunas Level 3 Support" endquery="false" field="assignment_group" goto="false" newquery="false" operator="!=" or="false" value="3c89f25b3717a600557f772a53990e50"/>
+            <item display_table="sys_user_group" display_value="Wisetech" endquery="false" field="assignment_group" goto="false" newquery="false" operator="!=" or="false" value="5d411eeb4fbd3600e022ecd18110c741"/>
+            <item display_table="sys_user_group" display_value="GHQ - Yunas" endquery="false" field="assignment_group" goto="false" newquery="false" operator="!=" or="false" value="07d1522f4fbd3600e022ecd18110c784"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>YIS Field on Incident Visible</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>macqueena</sys_created_by>
+        <sys_created_on>2016-08-24 12:27:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>da3961f34f9d2a00e022ecd18110c79f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>YIS Field on Incident Visible</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
+        <sys_update_name>sys_ui_policy_da3961f34f9d2a00e022ecd18110c79f</sys_update_name>
+        <sys_updated_by>macqueena</sys_updated_by>
+        <sys_updated_on>2017-04-10 13:42:49</sys_updated_on>
+        <table>incident</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>incident</collection>
+        <message/>
+        <message_html><![CDATA[<p>Your incident relating to ${sort_description} has been resolved as follows:-</p>
+<p>&nbsp;</p>
+<p>If you wish to have it reopened please reply to this email.</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Incident Resolved</name>
+        <sms_alternate/>
+        <subject>We have resolved your incident ${number}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>macqueena</sys_created_by>
+        <sys_created_on>2017-09-15 14:43:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>65e643dc37d90300557f772a53990ea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Incident Resolved</sys_name>
+        <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
+        <sys_update_name>sysevent_email_template_65e643dc37d90300557f772a53990ea3</sys_update_name>
+        <sys_updated_by>macqueena</sys_updated_by>
+        <sys_updated_on>2017-09-15 14:43:00</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
