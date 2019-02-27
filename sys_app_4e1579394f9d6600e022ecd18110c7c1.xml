@@ -5,6 +5,7 @@
         <enforce_license>log</enforce_license>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
+        <license_model>none</license_model>
         <logo/>
         <menu display_value="Yunas">4a157d394f9d6600e022ecd18110c7b5</menu>
         <name>Yunas</name>
@@ -22,14 +23,14 @@
         <sys_created_by>macqueena</sys_created_by>
         <sys_created_on>2016-08-18 08:10:59</sys_created_on>
         <sys_id>4e1579394f9d6600e022ecd18110c7c1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>macqueena</sys_updated_by>
-        <sys_updated_on>2016-08-25 13:30:25</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>Simonco</sys_updated_by>
+        <sys_updated_on>2019-02-27 11:16:50</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="x_nyklo_yunas.user" name="x_nyklo_yunas.user">d2157d394f9d6600e022ecd18110c7b6</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </sys_app>
 </record_update>

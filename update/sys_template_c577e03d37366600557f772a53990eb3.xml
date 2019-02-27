@@ -17,18 +17,18 @@
         <sys_created_on>2016-10-31 16:05:56</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>c577e03d37366600557f772a53990eb3</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Yunas DE</sys_name>
         <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
         <sys_update_name>sys_template_c577e03d37366600557f772a53990eb3</sys_update_name>
-        <sys_updated_by>macqueena</sys_updated_by>
-        <sys_updated_on>2017-09-27 10:41:13</sys_updated_on>
+        <sys_updated_by>EmmersoS</sys_updated_by>
+        <sys_updated_on>2018-03-09 10:14:21</sys_updated_on>
         <table>incident</table>
         <template>u_verify_the_business_service=bf373375379c82007bcb9c9953990e7e^u_secondary_business_services=Yunas^assignment_group=ec8db17137226a40557f772a53990eb5^cmdb_ci=c6018e457139d4402a29aab2216205e2^category=Request for Incident Resolution^impact=2^incident_state=7^u_ooh_call=No^u_site_visit_needed_to_resolve=No^u_business_service=bf373375379c82007bcb9c9953990e7e^contact_type=email^urgency=3^EQ</template>
-        <user display_value="Angus MacQueen">12aa56ac4a3623230147cfce078a633e</user>
+        <user display_value="Susan Emmerson">1ae97ade34ca85000ed5d225ea2a3da6</user>
         <view/>
     </sys_template>
 </record_update>

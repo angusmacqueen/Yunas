@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="Yunas">4a157d394f9d6600e022ecd18110c7b5</application>
         <assessment/>
         <content_page/>
@@ -71,7 +71,7 @@ function displayModuleCountae63ab6737dba600557f772a53990e4b(response){
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>ae63ab6737dba600557f772a53990e4b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Open - Assigned to my Group</sys_name>
         <sys_overrides/>
         <sys_package display_value="Yunas" source="x_nyklo_yunas">4e1579394f9d6600e022ecd18110c7c1</sys_package>
@@ -79,11 +79,11 @@ function displayModuleCountae63ab6737dba600557f772a53990e4b(response){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Yunas">4e1579394f9d6600e022ecd18110c7c1</sys_scope>
         <sys_update_name>sys_app_module_ae63ab6737dba600557f772a53990e4b</sys_update_name>
-        <sys_updated_by>macqueena</sys_updated_by>
-        <sys_updated_on>2017-01-04 11:42:31</sys_updated_on>
+        <sys_updated_by>Simonco</sys_updated_by>
+        <sys_updated_on>2019-02-27 11:11:26</sys_updated_on>
         <timeline_page/>
         <title>Open - Assigned to my Group</title>
-        <u_basic_module display_value="Open - Assigned to my Group">888a96e2db4c3a009e4970cbbf9619f7</u_basic_module>
+        <u_basic_module display_value="Open - Assigned to my Group">60d13f3a4f73ef00721734828110c7a3</u_basic_module>
         <u_count_color>Blue</u_count_color>
         <u_count_filter/>
         <u_refresh_interval>300000</u_refresh_interval>
